@@ -1,0 +1,25 @@
+div(data-role='page')
+    div(data-role='header')
+        h1 Single Player Game
+
+
+    div(data-role='content')
+        h2 Player Details
+
+        form(action='/single/new', method='post')
+            div(data-role='fieldcontain')
+                label(for='red') Red Player
+                input(type='text', name='redName', id='red', data-mini='true', class='redPlayer')
+                input(type='hidden', name='redScore', value='0')
+
+            div(data-role='fieldcontain')
+                label(for='blue') Blue Player
+                input(type='text', name='blueName', id='blue', data-mini='true', class='bluePlayer')
+                input(type='hidden', name='blueScore', value='0')
+
+            input(type='submit', value='Start', data-icon='check', data-mini='true', data-inline='true')
+
+
+    div(data-role='footer')
+        h2
+            a(href='/', data-role='button', data-icon='home') home

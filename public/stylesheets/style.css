@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.redPlayer {
+    background-color:red;
+    color:white;
+    opacity: 0.5;
+}
+
+.bluePlayer {
+    background-color:blue;
+    color:white;
+    opacity: 0.5;
+}
+

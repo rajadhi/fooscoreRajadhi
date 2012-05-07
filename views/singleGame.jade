@@ -1,0 +1,23 @@
+div(data-role='page')
+    script(src='/javascripts/singleGame.js')
+    div(data-role='header')
+        h1 #{redName} Vs #{blueName}
+    div(data-role='content')
+        h2 Scores
+
+        form(action='/single/new', method='post')
+            div(class='ui-grid-a')
+                div(class='ui-block-a') Current score for #{redName}
+                    h2 #{redScore}
+                    input(type='hidden', name='redName', value='#{redName}')
+                    input(type='hidden', id='redScore', name='redScore', value='#{redScore}')
+                    input(type='submit', id='redGoalBtn', value='Goal!', data-icon='check', data-mini='true', data-inline='true')
+                div(class='ui-block-b') Current score for #{blueName}
+                    h2 #{blueScore}
+                    input(type='hidden', name='blueName', value='#{blueName}')
+                    input(type='hidden', name='blueScore', value='#{blueScore}')
+                    input(type='submit', id='blueGoalBtn', value='Goal!', data-icon='check', data-mini='true', data-inline='true')
+    div(data-role='footer')
+        h2
+            a(href='/', data-role='button', data-icon='home') home
+

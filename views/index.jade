@@ -1,0 +1,15 @@
+div(data-role='page', id='foo')
+    div(data-role='header')
+        h1=welcomeMessage
+
+    div(data-role='content')
+        h4 Select a game
+        ul(data-role='listview', data-inset='true')
+            li
+                a(href='/single/new') Single
+            li
+                a(href='/double/new') Double
+
+    div(data-role='footer')
+        h2
+            a(href='/', data-role='button', data-icon='home') Home
